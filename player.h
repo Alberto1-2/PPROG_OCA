@@ -30,7 +30,7 @@ STATUS player_set_player_location(Player* player, Id id);
 Id player_get_player_location(Player* player);
 
 STATUS player_set_object(Player* player, BOOL value);
-BOOL player_get_object(Player* player);
+Id player_get_object(Player* player);
 
 STATUS player_print(Player* player);
 

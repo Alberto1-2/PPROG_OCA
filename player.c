@@ -19,7 +19,7 @@ struct _Player{
    Id id;
    char name[WORD_SIZE +1];
    Id player_location;
-   BOOL object;
+   Id object_id;
 
 };   
  /**Declaration of public functions***/
@@ -102,7 +102,7 @@ STATUS player_set_object(Player* player, BOOL value) {
   return OK;
 }
 
-BOOL player_get_object(Player* player) {
+Id player_get_object(Player* player) {
   if (!player) {
     return FALSE;
   }

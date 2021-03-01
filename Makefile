@@ -26,6 +26,9 @@ game_reader.o: game_reader.c game_reader.h
 	
 object.o: object.c object.h types.h
 	gcc -c object.c
+
+player.o: player.c player.h types.h	
+	gcc -c player.c
 	
 .PHONY: clean
 clean:
